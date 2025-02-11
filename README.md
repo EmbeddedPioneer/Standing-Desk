@@ -78,7 +78,7 @@ The firmware is written on the **Arduino platform** and requires the ATmega328P 
 - The desk allows storing one specific height positions for quick recall.  
 - Press the **Mode button** to switch to **Saved Position Mode**.  
 - Adjust the desk to a preferred height and **save it** using save button.  
-- When in **Saved Position Mode**, pressing **MODE** will move the desk to stored positions.  
+- When  pressing **MODE** the disk will move to the stored positions.  
 
 ### Safety Features  
 - **Limit Switches:** Prevents movement beyond mechanical constraints.  
