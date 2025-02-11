@@ -33,9 +33,10 @@ This repository contains all the necessary files to build and assemble the desk,
 1. **Inputs**:  
    - **Power Supply**: 12V or 24V (Depends on DC motor model) and GND.  
    - **Control Switches**:  
-     - 2 switches for UP and DOWN.  
-     - 1 switch for Homing To the Min Position .  
-     - 1 switch to select the Mode (Saved Position).
+     - 2 Switches for UP and DOWN.  
+     - 1 Switch for Homing To the Min Position .
+     - 1 Switch to save the current position. 
+     - 1 Switch to select the Mode (Saved Position).
      - 1 Endstop to detects the Min Position when Homing.
      - 1 Optical Endstop to calculate the travel from the Min position to the current position.
 2. **Outputs**:  
@@ -57,14 +58,35 @@ The firmware is written on the **Arduino platform** and requires the ATmega328P 
 ---
 
 ## Operation  
-### Control Switches  
-1. **Number of LEDs (4 switches)**:  
-   - Use binary values (e.g., `0000` for 0 LEDs, `0001` for 1 LED, up to `1100` for 12 LEDs).  
-2. **Operation Modes (2 switches)**:  
-   - `00`: Dynamic Mode 1 (e.g., Sequential Lighting).  
-   - `01`: Dynamic Mode 2 (e.g., Blinking All LEDs).  
-   - `10`: Dynamic Mode 3 (e.g., Alternate Pairs Lighting).  
-   - `11`: Dynamic Mode 4 (e.g., Random LED Lighting).
+
+### Powering On  
+1. Connect the **24V/12V power supply** to the PCB.  
+2. Ensure all connections (motors, endstops, buttons) are properly secured.  
+
+### Manual Height Adjustment  
+- Use the **UP** and **DOWN** buttons to control the desk height.  
+- The **motorized mechanism** moves the desk smoothly between sitting and standing positions.  
+- The **optical endstop** continuously tracks position changes to ensure precise height adjustments.  
+
+### Homing Process  
+- When first powered on, the system requires **homing** to calibrate its position.  
+- Press the **Homing button**, and the desk will move to the **minimum position**.  
+- The **mechanical endstop** will detect the lower limit and stop movement.  
+- Once homing is complete, the system is ready for normal operation.  
+
+### Memory Presets (Saved Positions)  
+- The desk allows storing one specific height positions for quick recall.  
+- Press the **Mode button** to switch to **Saved Position Mode**.  
+- Adjust the desk to a preferred height and **save it** using save button.  
+- When in **Saved Position Mode**, pressing **MODE** will move the desk to stored positions.  
+
+### Safety Features  
+- **Limit Switches:** Prevents movement beyond mechanical constraints.  
+
+### Shutdown Procedure  
+- Lower the desk to the minimum position (recommended).  
+- Disconnect the **power supply** if the desk won’t be used for an extended period.  
+
      
 ---
 
