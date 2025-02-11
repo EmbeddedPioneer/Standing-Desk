@@ -99,11 +99,12 @@ The firmware is written on the **Arduino platform** and requires the ATmega328P 
 
 ---
 
-## Future Plans  
-- **Wi-Fi Support** for wireless control.  
-- **Mobile App** to customize patterns and delays.  
-- **RGB Control** for each digit.  
-- **Custom Modes** for user-defined patterns.  
+## Feature Improvements  
+- **Stronger Frame & Higher Load Capacity** – Reinforce the structure to support heavier loads beyond 20kg.  
+- **Dual-Motor System** – Enhance stability and lifting efficiency with synchronized motors.  
+- **LCD Display** – Display real-time height, system status, and saved presets.  
+- **Soft Start & Stop Motion** – Implement acceleration control for smoother transitions.  
+ 
 
 ---
 
