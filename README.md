@@ -90,13 +90,6 @@ The firmware is written on the **Arduino platform** and requires the ATmega328P 
      
 ---
 
-### Testing  
-After assembling the board:  
-1. Set all switches to the maximum values.  
-2. Vary the operation mode and delay settings.  
-3. Observe LED indicator behavior on each output channel.  
-
----
 
 ## Repository Structure  
 - **Hardware:** PCB design files, schematics, KiCad Files, and BOM
